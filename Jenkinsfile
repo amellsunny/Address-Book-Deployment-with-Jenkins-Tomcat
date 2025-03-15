@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('CheckOut Code') {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/AmalSunny992/Jenkins-Hands-On-1.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/amellsunny/Address-Book-Deployment-with-Jenkins-Tomcat.git']])
             }
         }
         stage('Maven Build Tool') {
